@@ -5,7 +5,7 @@
     include( "Vimprimir.php" );
     include( "Sesiones.php" );
 
-    Sesiones::iniciar_sesion();
+    Sesiones::verificar_sesion();
 
     //Capturamos variables del formulario
     $documento = $_POST[ 'documento' ];
@@ -23,5 +23,5 @@
         header( "location: c_seccion.php" );
 
     }else{
-            header( "location: c_autenticar.php" );
+            header( "location: c-autenticacion.php" );
         }

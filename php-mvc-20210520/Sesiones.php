@@ -15,11 +15,11 @@
             {
                 if( TRIM( $_SESSION[ 'usuario' ] ) == "" )
                 {
-                    header( "location: c_autenticar.php" );
+                    header( "location: c-autenticacion.php" );
                 }
 
             }else{
-                    header( "location: c_autenticar.php" );
+                    header( "location: c-autenticacion.php" );
                 }
         }
     }
